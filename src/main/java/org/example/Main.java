@@ -28,5 +28,10 @@ public class Main {
                 System.out.println(f.getTitolo());
             }
         }
+
+        System.out.println("=== Durate ===");
+        for(Film f : films){
+            System.out.println(f.getTitolo() + ": " + f.getDurataFormattata());
+        }
     }
 }

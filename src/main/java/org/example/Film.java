@@ -26,6 +26,12 @@ public class Film {
         return durata > 120;
     }
     public boolean isRecente() {return anno >= 2000; }
+    public String getDurataFormattata(){
+        int ore = durata / 60;
+        int minuti = durata % 60;
+        return ore + "h " + minuti + "min";
+    }
+
 
     //come l'oggetto si presenta quando lo stampi
     @Override
