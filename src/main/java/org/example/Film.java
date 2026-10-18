@@ -20,17 +20,17 @@ public class Film {
     public int getAnno() { return anno; }
     public int getDurata() { return durata; }
     public String getGenere(){ return genere; }
+    public String getDurataFormattata(){
+        int ore = durata / 60;
+        int minuti = durata % 60;
+        return ore + "h " + minuti + "min";
+    }
 
     //METODI
     public boolean isLungo(){
         return durata > 120;
     }
     public boolean isRecente() {return anno >= 2000; }
-    public String getDurataFormattata(){
-        int ore = durata / 60;
-        int minuti = durata % 60;
-        return ore + "h " + minuti + "min";
-    }
 
 
     //come l'oggetto si presenta quando lo stampi
